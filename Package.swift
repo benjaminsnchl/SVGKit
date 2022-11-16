@@ -5,8 +5,8 @@ let package = Package(
     name: "SVGKit",
     platforms: [
         .macOS(.v10_10),
-        .iOS(.v9),
-        .tvOS(.v9)
+        .iOS(.v12),
+        .tvOS(.v12)
     ],
     products: [
         .library(
@@ -19,7 +19,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", .upToNextMinor(from: "3.7.0"))
+        .package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git")
     ],
     targets: [
         .target(
